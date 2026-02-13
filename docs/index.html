@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LoL Strategy Analytics | Insights Hub</title>
+  <meta name="description" content="LoL strategy insights hub with detailed analysis pages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body data-page="home">
+  <header class="hero">
+    <div class="hero__inner">
+      <nav class="site-nav">
+        <a class="site-nav__item site-nav__item--active" href="./index.html">Home</a>
+        <a class="site-nav__item" href="./analysis1.html">Analysis 1</a>
+        <a class="site-nav__item" href="./analysis2.html">Analysis 2</a>
+        <a class="site-nav__item" href="./analysis3.html">Analysis 3</a>
+      </nav>
+      <p class="eyebrow">LoL Strategy Analytics</p>
+      <h1>Game Understanding, Backed by Data</h1>
+      <p class="lead">
+        Explore three strategy analyses: objective value, climber behavior, and pre-game win signals.
+      </p>
+      <div class="hero__actions">
+        <a class="button button--primary" href="#analyses">Start Reading</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout" id="analyses">
+    <section class="card">
+      <h2>Latest Snapshot Highlights</h2>
+      <div id="snapshot-meta" class="metric-grid"></div>
+      <div id="snapshot-home-kpis" class="metric-grid"></div>
+    </section>
+
+    <section class="card">
+      <h2>Choose Analysis</h2>
+      <div class="analysis-links">
+        <a class="analysis-link" href="./analysis1.html">
+          <h3>Analysis 1: Dragon vs. Void Grubs</h3>
+          <p>Objective control tradeoffs and timing-based interpretation.</p>
+        </a>
+        <a class="analysis-link" href="./analysis2.html">
+          <h3>Analysis 2: High-ELO Climber Traits</h3>
+          <p>Vision, warding, deaths, and consistency behavior patterns.</p>
+        </a>
+        <a class="analysis-link" href="./analysis3.html">
+          <h3>Analysis 3: Pre-game Win Signals</h3>
+          <p>Draft and composition factors with dummy model outputs.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>LoL Strategy Analytics | Insights Hub</p>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+{
+  "generated_at_utc": "2026-02-13T14:34:35.043138+00:00",
+  "region": "jp1",
+  "routing": "asia",
+  "generation_config": {
+    "queue": "RANKED_SOLO_5x5",
+    "target_players": 12,
+    "matches_per_player": 3
+  },
+  "sample": {
+    "challenger_players": 12,
+    "matches_analyzed": 35,
+    "player_match_rows": 49
+  },
+  "match_id_preview": [
+    "JP1_564601948",
+    "JP1_564589021",
+    "JP1_564567579",
+    "JP1_564719745",
+    "JP1_564712513",
+    "JP1_564707045",
+    "JP1_564872940",
+    "JP1_564870440",
+    "JP1_564866611",
+    "JP1_564736435",
+    "JP1_564726901",
+    "JP1_564724126",
+    "JP1_564783192",
+    "JP1_564771166",
+    "JP1_564755941"
+  ],
+  "objective_value": {
+    "three_grubs_one_or_less_dragon": {
+      "wins": 3,
+      "total": 9,
+      "win_rate_percent": 33.33
+    },
+    "two_or_more_dragons_one_or_less_grub": {
+      "wins": 10,
+      "total": 16,
+      "win_rate_percent": 62.5
+    }
+  },
+  "climber_traits": {
+    "win_rate_percent": 67.35,
+    "avg_vision_score": 35.43,
+    "avg_control_wards_bought": 2.59,
+    "avg_deaths": 4.49
+  }
+}

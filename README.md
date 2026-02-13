@@ -69,3 +69,39 @@ Our primary goal is to provide value to the community, not commercialization (Ad
     ```bash
     python analyze_prototype.py
     ```
+
+## 6. Generate a Real API Snapshot for Review
+To provide concrete evidence of actual API usage, generate a fresh snapshot file and publish it in the demo page.
+
+1. Set a valid Riot API key in `RIOT_API_KEY`
+2. Run:
+   ```bash
+   python generate_snapshot.py
+   ```
+3. This creates:
+   - `docs/data/live-snapshot.json`
+   - `docs/data/live-snapshot.md`
+
+These files are displayed from `docs/index.html` under "Live API Snapshot (Recent Sample)".
+If your development key expires (401), issue a new key from the Riot Developer Portal and run again.
+## 7. Public Demo Page for Riot Review
+To provide a verifiable public link and user flow, this repository includes a static demo page at `docs/index.html`.
+
+Pages:
+- Public insights page: `docs/index.html`
+
+Access policy:
+- Public user-facing experience is `docs/index.html`.
+- In production, analysis data will be stored in SQL and detailed sections on this page will be populated from SQL-derived outputs.
+
+### GitHub Pages Setup
+1. Go to repository **Settings** -> **Pages**
+2. Under **Build and deployment**, set:
+   - **Source**: Deploy from a branch
+   - **Branch**: `main` / `/docs`
+3. Save and wait for deployment
+4. The public URL will be:
+   - `https://Ryonosuke-K.github.io/lol-strategy-analytics/`
+
+### Reviewer Flow Link
+After deployment, provide the URL above in your Riot application reply as the working public link.

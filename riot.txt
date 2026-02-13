@@ -1,1 +1,65 @@
-882e6209-4a05-444f-8c19-250e4c3f6238
+Application ID: 882e6209-4a05-444f-8c19-250e4c3f6238
+
+Riot Reviewer Reply Template (copy/paste)
+----------------------------------------
+Hello Riot Developer Relations Team,
+
+Thank you for the review and feedback.
+We have fixed the issue and are now providing a working public demo link and a clear user flow.
+
+Project Name:
+LoL Strategy Analytics
+
+Working Link (public):
+https://ryonosuke-k.github.io/lol-strategy-analytics/
+
+Demo Video (optional but recommended):
+<PASTE_VIDEO_URL>
+
+User Flow:
+1. Open the site: https://ryonosuke-k.github.io/lol-strategy-analytics/
+2. From Home, open Analysis 1 (Dragon vs. Void Grubs).
+3. Return to Home and open Analysis 2 (High-ELO Climber Behavior Traits).
+4. Return to Home and open Analysis 3 (Pre-game Win Signal Model).
+5. Verify each analysis page contains a detailed explanation section and visible metrics.
+6. Optional technical reference:
+   - GitHub repository: https://github.com/Ryonosuke-K/lol-strategy-analytics
+   - Snapshot data file: https://ryonosuke-k.github.io/lol-strategy-analytics/data/live-snapshot.json
+
+Product Description:
+An advanced data analysis project aiming to quantify the strategic value of objectives (Dragons vs. Void Grubs) and identify behavioral traits of high-ELO climbers.
+
+This project utilizes the Match V5, League V4, and Summoner V4 APIs to analyze large-scale match data. The goal is to provide the community with statistically significant insights, such as "Win rate impact of 3 Grubs vs. 1 Dragon" and "Vision score patterns of players who successfully climb ranks."
+
+The project is designed as an automated data pipeline running on a cloud server to continuously gather and analyze data for research purposes. We will publish our findings on YouTube and technical blogs to contribute to the community.
+
+What was fixed:
+- The previously broken/blank link was replaced with a working public URL.
+- Landing page now shows the product purpose immediately.
+- Main analysis flow is accessible without dead-end pages.
+- Added a real API snapshot workflow to show recent sampled metrics from Riot APIs.
+
+Compliance notes:
+- API key is stored in environment variables only (never hardcoded).
+- Rate limits are handled with Retry-After based backoff.
+- The app follows Riot policy and is intended for community analytics use.
+- Data is collected via Riot APIs and stored in SQL in production for deeper and repeatable analysis.
+- The public demo page currently uses snapshot output, and SQL-backed detailed analysis sections will be populated in production.
+- In the production environment, the service will be provided in Japanese and the UI/UX design will be further polished.
+- The current narrative/explanatory content on the demo pages is placeholder (dummy) content for review purposes and will be replaced with finalized production content.
+
+Please let us know if any additional validation details are required.
+Thank you for reconsidering our application.
+
+Best regards,
+<YOUR_NAME>
+
+
+Submission Checklist
+--------------------
+[ ] URL opens in incognito mode (no login required)
+[ ] No blank page / build error on first load
+[ ] At least one visible screen explains product purpose
+[ ] At least one end-to-end user flow is clickable and completes
+[ ] If API call fails, user sees an error message (not blank page)
+[ ] Optional demo video attached (30-90 seconds)
